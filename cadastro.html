@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Bomb Bubble Tea</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Ícone do menu -->
+    <i class="fas fa-bars menu-icon" onclick="abrirMenu()"></i>
+
+    <!-- Menu lateral -->
+    <div id="menuLateral" class="Menu-Lateral">
+        <a href="./index.html">Início</a>
+        <a href="./cardapio.html">Cardápio</a>
+        <a href="./sobreNos.html">Sobre Nós</a>
+        <a href="https://github.com/eduardo-072" target="_blank"><i class="fa-brands fa-github"></i> <span
+                class="iten-ds">Meu Github</span></a>
+    </div>
+
+    <div class="cx">
+        <div class="cx-2">
+            <h6>Welcome to</h6>
+            <h6 class="p">Bomb Tea</h6>
+        </div>
+        <div class="form-area">
+            <h1><strong>Cadastre-se</strong></h1>
+            <form>
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="login" id="login" placeholder="Ex: exemplo@email.com">
+                <label for="senha"><strong>Senha</strong></label>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+                <a href="cardapio.html">
+                    <button type="button" class="btn-login" id="botaoLogin"><strong>Fazer Login</strong></button>
+                </a>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function abrirMenu() {
+            const menu = document.getElementById("menuLateral");
+            menu.style.width = menu.style.width === "250px" ? "0" : "250px";
+        }
+
+        document.getElementById('botaoLogin').addEventListener('click', function () {
+        alert('Login efetuado com sucesso!');
+        window.location.href = 'cardapio.html';
+    });
+ </script>
+
+</body>
+
+</html>

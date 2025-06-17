@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fce8ec;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.menu-icon {
+  font-size: 30px;
+  padding: 15px;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1001;
+  color: #fff;
+}
+
+/* Menu lateral */
+.Menu-Lateral {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #eb8d96;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  z-index: 1000;
+}
+
+.Menu-Lateral a {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.Menu-Lateral a:hover {
+  background-color: #e7bbbb;
+}
+
+/* Topo fixo */
+nav.content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 130px;
+  background-color: #eb8d96;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  z-index: 999;
+}
+
+nav.content h1 {
+  font-size: 40px;
+}
+
+ul.itens {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  list-style: none;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+ul.itens li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Caixa de Cadastro */
+.cx {
+  background-color: #fff;
+  width: 900px;
+  height: 500px;
+  margin: 180px auto;
+  display: flex;
+  border-radius: 80px;
+  box-shadow: 0 20px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.cx-2 {
+  background-color: #eb8d96;
+  width: 40%;
+  padding: 40px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cx-2 h6 {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.p {
+  font-size: 40px;
+}
+
+.form-area {
+  width: 60%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-area h1 {
+  color: #eb8d96;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.form-area label {
+  color: #eb8d96;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.form-area input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.form-area input:focus {
+  outline: none;
+  border-color: #eb8d96;
+  box-shadow: 0 0 5px #eb8d96;
+}
+
+.btn-login {
+  margin-top: 30px;
+  background-color: transparent;
+  border: 2px solid #eb8d96;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  background-color: #eb8d96;
+  color: white;
+}
